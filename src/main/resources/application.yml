@@ -1,0 +1,44 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /
+    tomcat:
+      accesslog:
+        enabled: true
+
+application:
+  name: warehouse-service
+
+spring:
+  security:
+    user:
+      name: Demo
+      password: Demo123
+
+  datasource:
+    url: jdbc:h2:file:~/warehouseDb
+    driver-ClassName: org.h2.Driver
+    username: sa
+    password:
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+    properties:
+      hibernate:
+        format_sql: true
+        validator:
+          apply_to_ddl: false
+    database-platform: org.hibernate.dialect.H2Dialect
+
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: 'prometheus,metrics,health'
