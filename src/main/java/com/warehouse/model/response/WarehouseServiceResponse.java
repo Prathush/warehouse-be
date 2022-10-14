@@ -14,9 +14,8 @@ import lombok.Getter;
 @Getter
 @Builder
 @JsonView
-public class WarehouseServiceResponse<T>
-{
-	private final T warehouseSearchProductList;
-	private final T warehouseAvailableBoxList;
-	private final T warehouseServiceResponse;
+public class WarehouseServiceResponse<T> {
+    private final T warehouseSearchProductList;
+    private final T warehouseAvailableBoxList;
+    private final T warehouseServiceResponse;
 }

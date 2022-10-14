@@ -1,7 +1,8 @@
 package com.warehouse.model.response;
 
 import io.swagger.annotations.ApiModel;
-import lombok.*;
+import lombok.Builder;
+import lombok.Data;
 
 /**
  * Success Response class of warehouse service
@@ -13,8 +14,7 @@ import lombok.*;
 @Data
 @Builder
 @ApiModel(description = "Success Response")
-public class SuccessResponse
-{
-	private String status;
-	private String message;
+public class SuccessResponse {
+    private String status;
+    private String message;
 }

@@ -11,10 +11,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @since 12-Oct-2022
  */
 @SpringBootApplication
-public class WarehouseApplication
-{
-	public static void main(String[] args)
-	{
-		SpringApplication.run(WarehouseApplication.class, args);
-	}
+public class WarehouseApplication {
+    public static void main(String[] args) {
+        SpringApplication.run(WarehouseApplication.class, args);
+    }
 }

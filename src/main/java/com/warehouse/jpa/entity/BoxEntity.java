@@ -1,13 +1,16 @@
 package com.warehouse.jpa.entity;
 
+import com.sun.istack.NotNull;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import org.hibernate.annotations.GenericGenerator;
+
+import javax.persistence.*;
 import java.io.Serializable;
 import java.util.HashSet;
 import java.util.Set;
-import javax.persistence.*;
-
-import org.hibernate.annotations.GenericGenerator;
-import com.sun.istack.NotNull;
-import lombok.*;
 
 /**
  * Box Entity class for handling box transaction

@@ -1,8 +1,9 @@
 package com.warehouse.jpa.repository;
 
-import java.util.List;
-import org.springframework.data.jpa.repository.JpaRepository;
 import com.warehouse.jpa.entity.ProductEntity;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import java.util.List;
 
 /**
  * Product repository interface for handling box transaction
@@ -11,9 +12,8 @@ import com.warehouse.jpa.entity.ProductEntity;
  * @version 1.0.0
  * @since 12-Oct-2022
  */
-public interface ProductRepository extends JpaRepository<ProductEntity, String>
-{
-	ProductEntity findByProductName(String productName);
+public interface ProductRepository extends JpaRepository<ProductEntity, String> {
+    ProductEntity findByName(String name);
 
-	List<ProductEntity> findByProductNameContainsIgnoreCaseOrderByProductNameAsc(String productName);
+    List<ProductEntity> findByNameContainsIgnoreCaseOrderByNameAsc(String name);
 }

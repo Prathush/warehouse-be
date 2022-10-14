@@ -7,8 +7,7 @@ package com.warehouse.model;
  * @version 1.0.0
  * @since 12-Oct-2022
  */
-public enum WarehouseConstant
-{
+public enum WarehouseConstant {
     OK("ok"), //Success code of the application
     KO("ko"), //Failure code of the application
     BOX_CREATED("Successfully created the box with specified capacity"),

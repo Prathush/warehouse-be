@@ -1,8 +1,9 @@
 package com.warehouse.model.response;
 
-import java.util.Date;
 import lombok.Builder;
 import lombok.Data;
+
+import java.util.Date;
 
 /**
  * Error Response class of warehouse service
@@ -13,10 +14,9 @@ import lombok.Data;
  */
 @Data
 @Builder
-public class ErrorResponse
-{
-	private String status;
-	private Date timestamp;
-	private String message;
-	private String description;
+public class ErrorResponse {
+    private String status;
+    private Date timestamp;
+    private String message;
+    private String description;
 }

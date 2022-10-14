@@ -1,14 +1,15 @@
 package com.warehouse.config.logger;
 
-import java.io.IOException;
-import java.util.UUID;
+import lombok.extern.slf4j.Slf4j;
+import org.slf4j.MDC;
+import org.springframework.core.annotation.Order;
+import org.springframework.stereotype.Component;
+
 import javax.servlet.*;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import org.slf4j.*;
-import org.springframework.core.annotation.Order;
-import org.springframework.stereotype.Component;
-import lombok.extern.slf4j.Slf4j;
+import java.io.IOException;
+import java.util.UUID;
 
 /**
  * Request Logger class for logging requests

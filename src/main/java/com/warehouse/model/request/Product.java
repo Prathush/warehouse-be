@@ -1,10 +1,14 @@
 package com.warehouse.model.request;
 
-import java.util.List;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+
 import javax.validation.constraints.NotNull;
-import lombok.*;
+import java.util.List;
 
 /**
  * Product input request model class
@@ -18,15 +22,14 @@ import lombok.*;
 @AllArgsConstructor
 @NoArgsConstructor
 @ApiModel(description = "Product Details")
-public class Product
-{
-	@ApiModelProperty(notes = "product to be created", name = "product", required = true)
-	@NotNull
-	private String name;
+public class Product {
+    @ApiModelProperty(notes = "product to be created", name = "product", required = true)
+    @NotNull
+    private String name;
 
-	@ApiModelProperty(notes = "box tagged to product", name = "box", required = true)
-	@NotNull
-	private String boxName;
+    @ApiModelProperty(notes = "box tagged to product", name = "box", required = true)
+    @NotNull
+    private String boxName;
 
-	private List<String> locationList;
+    private List<String> locationList;
 }
